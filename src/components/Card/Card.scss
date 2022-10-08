@@ -1,0 +1,40 @@
+$primary-color: #fff;
+$accent: #213f7d;
+$textiary: #39cdcc;
+$text-color: #545f7d;
+$font-stack: "Nunito", sans-serif;
+.card {
+    width: 240px;
+    height: 160px;
+    background: #ffffff;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 20px;
+    border-radius: 4px;
+    font-family: $font-stack;
+}
+.card-icon {
+    width: 40px;
+    height: 40px;
+}
+.card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #545f7d;
+}
+.card-value {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    color: #213f7d;
+}

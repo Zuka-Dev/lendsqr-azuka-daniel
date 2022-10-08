@@ -1,0 +1,17 @@
+table {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    .thead {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #545f7d;
+        img {
+            width: 16px;
+            height: 10.67px;
+        }
+    }
+}

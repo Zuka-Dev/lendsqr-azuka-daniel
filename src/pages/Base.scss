@@ -1,0 +1,36 @@
+.base {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+}
+.nav {
+    width: 100%;
+    height: auto;
+}
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    @media only screen and (max-width: 860px) {
+        flex-direction: column;
+    }
+}
+.side-bar {
+    height: 100vh;
+    overflow-y: scroll;
+    width: fit-content;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    @media only screen and (max-width: 860px) {
+        overflow-x: auto;
+        max-width: 100%;
+        height: 10%;
+    }
+}
+
+.display {
+    display: flex;
+    flex: 1;
+}

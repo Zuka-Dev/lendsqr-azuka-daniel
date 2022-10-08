@@ -1,0 +1,92 @@
+$primary-color: #fff;
+$accent: #213f7d;
+$textiary: #39cdcc;
+$text-color: #545f7d;
+$font-stack: "Nunito", sans-serif;
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    .search {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        
+        input {
+            width: 70%;
+            height: 40px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border: 1px solid #21407d20;
+            padding: 20px;
+            &::placeholder {
+                opacity: 0.2;
+                font-family: $font-stack;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: $text-color;
+            }
+        }
+        button {
+            width: 8%;
+            background: $textiary;
+            height: 40px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border: none;
+            transition: all ease-in 0.25s;
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:active {
+                opacity: 0.6;
+            }
+        }
+        @media only screen and (max-width: 860px) {
+            display: none;
+        }
+    }
+    .last-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        margin-right: 20px;
+        font-family: $font-stack;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $accent;
+        .docs {
+            text-decoration: underline;
+        }
+        .notify {
+            width: 19.67px;
+            border: none;
+            height: 22.74px;
+        }
+        .info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            img {
+                width: 50px;
+                height: 60px;
+                border-radius: 25px;
+            }
+        }
+        .options {
+            width: 7.34px;
+            height: 4.15px;
+        }
+
+        @media only screen and (max-width: 860px) {
+            display: none;
+        }
+    }
+}

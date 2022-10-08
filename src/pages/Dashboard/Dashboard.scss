@@ -1,0 +1,24 @@
+$primary-color: #fff;
+$accent: #213f7d;
+$textiary: #39cdcc;
+$text-color: #545f7d;
+$font-stack: "Nunito", sans-serif;
+.dash-div {
+    background: #f9f6f6;
+    width: 100%;
+    font-family: $font-stack;
+    padding: 60px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+.header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    color: #213f7d;
+}

@@ -1,0 +1,73 @@
+$primary-color: #fff;
+$accent: #213f7d;
+$textiary: #39cdcc;
+$text-color: #545f7d;
+$font-stack: "Nunito", sans-serif;
+.sidebar {
+    overflow-y: auto;
+    background: $primary-color;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    font-family: $font-stack;
+    align-items: flex-start;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    .s-o {
+        display: flex;
+        padding: 0px 20px;
+        align-items: center;
+        gap: 20px;
+        img {
+            height: 11.21px;
+            aspect-ratio: 1;
+        }
+    }
+    .dashboard {
+        padding: 0px 20px;
+        display: flex;
+        gap: 20px;
+        img {
+            height: 11.21px;
+            aspect-ratio: 1;
+        }
+    }
+    .sect {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+        .customers {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            margin-left: 10px;
+            text-transform: uppercase;
+            color: $text-color;
+        }
+    }
+    @media only screen and (max-width: 860px) {
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        overflow-x: auto;
+        margin-right: 20px;
+        overflow-y: hidden;
+        .sect {
+            width: fit-content;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: auto;
+            gap: 0;
+            .customers {
+                margin: 0px 30px;
+            }
+        }
+    }
+}
