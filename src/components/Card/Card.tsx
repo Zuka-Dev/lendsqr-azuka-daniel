@@ -10,7 +10,7 @@ const Card: React.FC<Props> = ({ cardIcon, cardTitle, cardValue }) => {
         <div className="card">
             <img src={cardIcon} alt="" className="card-icon" />
             <p className="card-title">{cardTitle}</p>
-            <p className="card-value">{cardValue}</p>
+            <p className="card-value">{cardValue.toLocaleString()}</p>
         </div>
     );
 };

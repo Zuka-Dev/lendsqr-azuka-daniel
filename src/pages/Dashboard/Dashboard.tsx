@@ -33,25 +33,25 @@ const Dashboard: React.FC = () => {
                 <Card
                     cardIcon={cicon}
                     cardTitle="Users"
-                    cardValue={users.length || 1}
+                    cardValue={users.length || 2453}
                 />
                 <Card
                     cardIcon={cicon2}
                     cardTitle="Active Users"
-                    cardValue={1}
+                    cardValue={2453}
                 />
                 <Card
                     cardIcon={cicon3}
                     cardTitle="Users with Loans"
-                    cardValue={1}
+                    cardValue={12453}
                 />
                 <Card
                     cardIcon={cicon4}
                     cardTitle="Users with Savings"
-                    cardValue={1}
+                    cardValue={102453}
                 />
             </div>
-            <Table users={users}/>
+            <Table users={users} total={users.length}/>
         </div>
     );
 };

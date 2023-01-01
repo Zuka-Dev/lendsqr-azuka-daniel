@@ -6,19 +6,23 @@ $font-stack: "Nunito", sans-serif;
 .dash-div {
     background: #f9f6f6;
     width: 100%;
+    flex: 1;
+    height: 100%;
+    overflow-y: scroll;
     font-family: $font-stack;
-    padding: 60px;
+    padding: 60px 50px;
 }
 .cards {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 25px;
+    margin-bottom: 30px;
 }
 .header {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #213f7d;
 }

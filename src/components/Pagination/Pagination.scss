@@ -1,0 +1,51 @@
+nav {
+    ul {
+        display: flex;
+        gap: 5px;
+        li {
+            list-style: none;
+            background: rgba(33, 63, 125, 0.1);
+            border-radius: 4px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                color: rgba(33, 63, 125, 0.1);
+            }
+            a {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+                background: transparent;
+                color: #545f7d;
+                display: flex;
+                opacity: 0.6;
+
+                img {
+                    width: 8.57px;
+                    height: 13.21px;
+                }
+            }
+        }
+        .active {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            border: none;
+        }
+        .numbs {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #545f7d;
+            background-color: transparent;
+            opacity: 0.6;
+        }
+    }
+}

@@ -4,26 +4,26 @@ $textiary: #39cdcc;
 $text-color: #545f7d;
 $font-stack: "Nunito", sans-serif;
 .card {
-    width: 240px;
-    height: 160px;
+    width: 340px;
+    height: 180px;
     background: #ffffff;
     border: 1px solid rgba(33, 63, 125, 0.06);
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
     padding: 30px 20px;
     border-radius: 4px;
     font-family: $font-stack;
 }
 .card-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 .card-title {
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 16px;
     text-transform: uppercase;
 
@@ -31,10 +31,11 @@ $font-stack: "Nunito", sans-serif;
 }
 .card-value {
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    letter-spacing: 1.7px;
 
     color: #213f7d;
 }

@@ -4,6 +4,7 @@ $textiary: #39cdcc;
 $text-color: #545f7d;
 $font-stack: "Nunito", sans-serif;
 section {
+    position: sticky;
     width: 100%;
     height: 100%;
     display: flex;
@@ -15,7 +16,7 @@ section {
         display: flex;
         align-items: center;
         width: 50%;
-        
+
         input {
             width: 70%;
             height: 40px;

@@ -1,8 +1,24 @@
+$font-stack: "Nunito", sans-serif;
 table {
     border: 1px solid black;
+    border-collapse: collapse;
     height: 100%;
     width: 100%;
+    background: #ffffff;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 0px 30px;
+    font-family: $font-stack;
+    margin-bottom: 20px;
+    tr {
+        border: 1px solid rgba(33, 63, 125, 0.1);
+        &:last-child {
+            border: none;
+        }
+    }
     .thead {
+        padding: 30px;
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
@@ -12,6 +28,50 @@ table {
         img {
             width: 16px;
             height: 10.67px;
+        }
+    }
+    .data {
+        td {
+            padding: 20px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            height: 62px;
+
+            color: #545f7d;
+            align-items: center;
+        }
+    }
+}
+.table-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .number {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: $font-stack;
+
+        color: #545f7d;
+        select {
+            background: rgba(33, 63, 125, 0.1);
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            option {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 17px;
+
+                color: #213f7d;
+            }
         }
     }
 }

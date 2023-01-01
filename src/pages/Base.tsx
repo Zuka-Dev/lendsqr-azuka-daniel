@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from "../components/NavBar/NavBar";
 import SideBar from "../components/SideBar/SideBar";
 import Dashboard from "./Dashboard/Dashboard";
+import UserDetails from "./UserDetails/UserDetails";
 
 const Base: React.FC = () => {
     return (
@@ -18,13 +19,10 @@ const Base: React.FC = () => {
                 <div className="display">
                     <Routes>
                         <Route path="/dashboard" element={<Dashboard />} />
+                        <Route path="/users/:id" element={<UserDetails />} />
                     </Routes>
                 </div>
-                {/* <div className="display">
-                    <Routes>
-                        <Route path="/dash" element={<Dashboard />} />
-                    </Routes>
-                </div> */}
+                
             </div>
         </div>
     );
