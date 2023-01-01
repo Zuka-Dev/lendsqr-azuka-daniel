@@ -79,38 +79,38 @@ const UserDetails: React.FC = () => {
                 <div className="personal-info">
                     <p className="heading">Personal Information</p>
                     <div className="two">
-                        <div>
+                        <div className="inner-info">
                             <p className="title">full name</p>
                             <p className="details">
                                 {user?.profile.firstName}{" "}
                                 {user?.profile.lastName}
                             </p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">phone number</p>
                             <p className="details">{user?.phoneNumber}</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">email address</p>
                             <p className="details">{user?.email}</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">BVN</p>
                             <p className="details">{user?.profile.bvn}</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">gender</p>
                             <p className="details">{user?.profile.gender}</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">marital status</p>
                             <p className="details">Single</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">children</p>
                             <p className="details">None</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">type of residence</p>
                             <p className="details">Parent's Apartment</p>
                         </div>
@@ -120,39 +120,39 @@ const UserDetails: React.FC = () => {
                     <p className="heading">Education and Employment</p>
 
                     <div className="two">
-                        <div>
+                        <div className="inner-info">
                             <p className="title">Level of education</p>
                             <p className="details">{user?.education.level}</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">Employment Status</p>
                             <p className="details">
                                 {user?.education.employmentStatus}
                             </p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">Sector of employment</p>
                             <p className="details">{user?.education.sector}</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">Duration of employment</p>
                             <p className="details">
                                 {user?.education.duration}
                             </p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">office email</p>
                             <p className="details">
                                 {user?.education.officeEmail}
                             </p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">Monthly income</p>
                             <p className="details">
                                 {user?.education.monthlyIncome}
                             </p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">loan repayment</p>
                             <p className="details">
                                 {user?.education.loanRepayment}
@@ -164,68 +164,45 @@ const UserDetails: React.FC = () => {
                     <p className="heading">Socials</p>
 
                     <div className="two">
-                        <div>
+                        <div className="inner-info">
                             <p className="title">twitter</p>
                             <p className="details">{user?.socials.twitter}</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">facebook</p>
                             <p className="details">{user?.socials.facebook}</p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">instagram</p>
                             <p className="details">{user?.socials.instagram}</p>
                         </div>
                     </div>
                 </div>
-                <div className="guarantors">
+                <div className="guarantors last">
                     <p className="heading">Guarantors</p>
 
                     <div className="two">
-                        <div>
+                        <div className="inner-info">
                             <p className="title">full name</p>
                             <p className="details">
                                 {user?.guarantor.firstName}{" "}
                                 {user?.guarantor.lastName}
                             </p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">phone number</p>
                             <p className="details">
                                 {user?.guarantor.phoneNumber}
                             </p>
                         </div>
-                        <div>
+                        <div className="inner-info">
                             <p className="title">email address</p>
                             <p className="details">{user?.guarantor.address}</p>
                         </div>
 
-                        <div>
+                        <div className="inner-info">
                             <p className="title">relationship</p>
                             <p className="details">Sister</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="last">
-                    <div className="two">
-                        <div>
-                            <p className="title">full name</p>
-                            <p className="details">
-                                {user?.profile.firstName}{" "}
-                                {user?.profile.lastName}
-                            </p>
-                        </div>
-                        <div>
-                            <p className="title">phone number</p>
-                            <p className="details">{user?.phoneNumber}</p>
-                        </div>
-                        <div>
-                            <p className="title">email address</p>
-                            <p className="details">{user?.email}</p>
-                        </div>
-                        <div>
-                            <p className="title">Relationship</p>
-                            <p className="details">{user?.profile.gender}</p>
                         </div>
                     </div>
                 </div>

@@ -58,7 +58,9 @@ const Table: React.FC<Props> = ({ users, total }) => {
                             <td>
                                 {moment(user?.lastActiveDate).format("lll")}
                             </td>
-                            <td>Inactive</td>
+                            <td className="status">
+                                <p>Inactive</p>{" "}
+                            </td>
                             <td style={{ paddingRight: "30px" }}>
                                 <img src={option} alt="" />
                             </td>
